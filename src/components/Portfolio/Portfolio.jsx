@@ -17,6 +17,7 @@ import recommendation from '../../assets/portfolio/gophoter/recommendation.png'
 import recommendationInside from '../../assets/portfolio/gophoter/recommendation-inside.png'
 import spots from '../../assets/portfolio/gophoter/spots.png'
 import upload from '../../assets/portfolio/gophoter/upload.png'
+import collection from '../../assets/portfolio/gophoter/collectionOfGophoter.png'
 
 const items = [
   {
@@ -116,7 +117,7 @@ class Portfolio extends React.Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img className='Portfolio-image-size' src={item.src} alt={item.altText} />
+          <img src={item.src} alt={item.altText} />
           <CarouselCaption captionText={item.caption} />
         </CarouselItem>
       );
@@ -130,18 +131,28 @@ class Portfolio extends React.Component {
             <CardSubtitle>Technologies used</CardSubtitle>
             <CardText>Reactjs, Javascript, Typescript, Nodejs, Express, Postgresql,
             Postman, REST API, Knex, Bcrypt, Clarifai API, Heroku</CardText>
-            <a href="https://wonderful-face-recognition.herokuapp.com/" rel="noopener noreferrer" target="_blank" ><Button>Live demo</Button></a>
+            <a href="https://wonderful-face-recognition.herokuapp.com/" rel="noopener noreferrer" target="_blank" >
+              <Button>Live demo</Button>
+            </a>{' '}
+            <a href="https://github.com/CharlesChanLok/face-recognition" rel="noopener noreferrer" target="_blank" >
+              <Button>Source code->Frontend</Button>
+            </a>{' '}
+            <a href="https://github.com/CharlesChanLok/face-recognition-backend" rel="noopener noreferrer" target="_blank" >
+              <Button>Source code->Backend</Button>
+            </a>
           </CardBody>
         </Card>
         <Card>
-          <CardImg top width="200px" height="857px" src={spots} alt="gophoter" />
+          <CardImg top width="100%" src={collection} alt="gophoter" />
           <CardBody>
             <CardTitle>GoPhoter (Content creator) Group Project</CardTitle>
+            <CardText>Team members: Telford Ho,  Charles Chan, Seamus Yeo, Hugo Cheng</CardText>
             <CardSubtitle>Technologies used</CardSubtitle>
             <CardText>React Native, Javascript, Nodejs, Express, Postgresql, Knex, REST API,
             Postman, Jasmine, Entity relationship diagram, Wireframe</CardText>
             <CardText>
-              <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
+              <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}Details</Button>{' '}
+              <a href="https://github.com/CharlesChanLok/gophoter" rel="noopener noreferrer" target="_blank" ><Button>Source code</Button></a>
               <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                 <ModalHeader toggle={this.toggle}>Gophoter</ModalHeader>
                 <ModalBody className='Portfolio-carousel-size'>
@@ -168,10 +179,16 @@ class Portfolio extends React.Component {
           <CardImg top width="100%" src={musicMixer} alt="music mixer" />
           <CardBody>
             <CardTitle>Music Mixer Group Project</CardTitle>
+            <CardTitle>Team members: Telford Ho, Charles Chan, Kevin Ching</CardTitle>
             <CardSubtitle>Technologies</CardSubtitle>
             <CardText>HTML, CSS, Javascript, Bootstrap, Nodejs, Express, Handlebars,
             Postgresql, Knex, Bcrypt, Passport, Google OAUTH2, P5</CardText>
-            <a href="https://wonderful-music-project.herokuapp.com/" rel="noopener noreferrer" target="_blank" ><Button>Live demo</Button></a>
+            <a href="https://wonderful-music-project.herokuapp.com/" rel="noopener noreferrer" target="_blank" >
+              <Button>Live demo</Button>
+            </a>{' '}
+            <a href="https://github.com/CharlesChanLok/Music-Project" rel="noopener noreferrer" target="_blank" >
+              <Button>Source code</Button>
+            </a>
           </CardBody>
         </Card>
 
@@ -180,9 +197,16 @@ class Portfolio extends React.Component {
           <CardImg top width="100%" src={canvas} alt="canvas" />
           <CardBody>
             <CardTitle>Online Canvas Group Project</CardTitle>
+            <CardTitle>Team members: Luke Yeung, Charles Chan, Brian </CardTitle>
             <CardSubtitle>Technologies</CardSubtitle>
             <CardText>HTML, CSS, Javascript, Jquery, Bootstrap, HTML 5 Canvas API</CardText>
-            <a href="https://charleschanlok.github.io/Canvas-group-project" rel="noopener noreferrer" target="_blank" ><Button>Live demo</Button></a>
+            <a href="https://charleschanlok.github.io/Canvas-group-project" rel="noopener noreferrer" target="_blank" >
+              <Button>Live demo</Button>
+            </a>{' '}
+            <a href="https://github.com/CharlesChanLok/Canvas-group-project" rel="noopener noreferrer" target="_blank" >
+              <Button>Source code</Button>
+            </a>
+
           </CardBody>
         </Card>
 
