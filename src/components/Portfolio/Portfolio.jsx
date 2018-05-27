@@ -1,23 +1,21 @@
 import React from 'react';
 import {
-  Button, Card, CardBody, CardImg, CardSubtitle, CardText, CardTitle, Modal, ModalHeader, ModalBody, ModalFooter, Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
+  Button, Card, CardBody, CardImg, CardSubtitle, CardText, CardTitle, Carousel, CarouselCaption,
+  CarouselControl, CarouselIndicators, CarouselItem,
+  Modal, ModalBody, ModalFooter, ModalHeader
 } from 'reactstrap';
 /**
  * portfolio images
  */
 import canvas from '../../assets/portfolio/canvas.png';
 import faceRecognition from '../../assets/portfolio/face.png';
+import collection from '../../assets/portfolio/gophoter/collectionOfGophoter.png';
+import loginPage from '../../assets/portfolio/gophoter/login.png';
+import recommendationInside from '../../assets/portfolio/gophoter/recommendation-inside.png';
+import recommendation from '../../assets/portfolio/gophoter/recommendation.png';
+import spots from '../../assets/portfolio/gophoter/spots.png';
+import upload from '../../assets/portfolio/gophoter/upload.png';
 import musicMixer from '../../assets/portfolio/music.png';
-import loginPage from '../../assets/portfolio/gophoter/login.png'
-import recommendation from '../../assets/portfolio/gophoter/recommendation.png'
-import recommendationInside from '../../assets/portfolio/gophoter/recommendation-inside.png'
-import spots from '../../assets/portfolio/gophoter/spots.png'
-import upload from '../../assets/portfolio/gophoter/upload.png'
-import collection from '../../assets/portfolio/gophoter/collectionOfGophoter.png'
 
 const items = [
   {

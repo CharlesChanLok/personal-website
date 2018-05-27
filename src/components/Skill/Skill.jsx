@@ -9,7 +9,7 @@ const Skill = (props) => {
     <div className='Skill'>
       <Card>
         <CardBody>
-          <CardTitle>Technologies I used</CardTitle>
+          <CardTitle>Technologies Charles used</CardTitle>
           <Container>
             <Row>
               <Col className='Skill-box'><FontAwesomeIcon icon={faHtml5} size="4x" />
@@ -67,7 +67,7 @@ const Skill = (props) => {
 
       <Card>
         <CardBody>
-          <CardTitle>Technologies or knowledge I want to learn more</CardTitle>
+          <CardTitle>Technologies or knowledge Charles wants to learn more</CardTitle>
           <Container>
             <Row>
               <Col className='Skill-box'><img className='Skill-icon-box' src="https://equimper.gallerycdn.vsassets.io/extensions/equimper/react-native-react-redux/1.9.0/1526851136093/Microsoft.VisualStudio.Services.Icons.Default" alt="react redux" />
