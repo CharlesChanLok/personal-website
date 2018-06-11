@@ -1,10 +1,11 @@
 .Skill-box {
-    display: inline;
+    display: inline-block;
     padding: 0 2rem;
 }
 
 .Skill-icon-box {
-    width: 3.14em;
+    width: 100px;
+    height: 100px;
 }
 
 .Skill p{
