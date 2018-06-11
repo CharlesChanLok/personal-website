@@ -1,4 +1,3 @@
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Card, CardBody, CardTitle, Col, Container, Row } from 'reactstrap';
 import './Skill.css';

@@ -6,7 +6,6 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Portfolio from "../Portfolio/Portfolio";
 import Skill from "../Skill/Skill";
-import ErrorPage from "../ErrorPage/ErrorPage";
 
 export default class NavBar extends React.Component {
   constructor(props) {
